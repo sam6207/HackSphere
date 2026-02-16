@@ -167,3 +167,65 @@ footer {
     font-size: 4.1rem;
   }
 }
+
+/* ===== RESPONSIVE HERO FIX ===== */
+.hero {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text-box {
+  max-width: 100%;
+}
+
+/* Logo responsive */
+.left-logo,
+.hero-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .hero-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-logo {
+    height: 70px;
+  }
+
+  .hero-text-box h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .date,
+  .tagline {
+    text-align: center;
+  }
+
+  .free-badge {
+    display: inline-block;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Text overflow fix */
+.hero-text-box h1,
+.tagline {
+  word-wrap: break-word;
+}
