@@ -8,7 +8,9 @@
 body {
   line-height: 1.6;
   color: #222;
+  overflow-x: hidden;   /* 👈 ADD THIS LINE */
 }
+
 
 .hero {
   height: 100vh;
@@ -21,7 +23,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 0.2rem;
   margin-bottom: 10px;
 }
 
@@ -31,7 +33,7 @@ body {
 }
 
 .tagline {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 25px;
 }
 
@@ -142,6 +144,21 @@ footer {
   margin-bottom: 15px;
 }
 
+/* ===== MOBILE HERO FIX ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .hero-title img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
 .hero-title img {
   width: 150px;
   height: 150px;           
@@ -228,4 +245,41 @@ footer {
 .hero-text-box h1,
 .tagline {
   word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .right h1 {
+    font-size: 26px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn,
+  .btn1 {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
