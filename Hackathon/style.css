@@ -283,3 +283,31 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.ppt-submit-btn{
+
+margin-top:25px;
+text-align:center;
+
+}
+
+.ppt-submit-btn a{
+
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:14px 28px;
+font-size:18px;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:0.3s;
+
+}
+
+.ppt-submit-btn a:hover{
+
+background:#1d4ed8;
+transform:scale(1.05);
+
+}
